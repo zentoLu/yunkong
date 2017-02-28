@@ -1,0 +1,10 @@
+.page_bottom {padding-left:0;}
+.page_bottom a{padding: 5px 8px;margin-left: 3px;}
+.page_bottom > b {display: block;float: left;padding: 5px 10px;border: 1px solid #ddd;margin-left: 5px;color: #FFF;background-color: #56C4F9;}
+
+.anli_l{height: 700px;}
+.anli_r{width:760px;height: auto;}
+.al_list a {width: 150px;height: 80px;}
+.al_list p {width: 150px;height: 75px;line-height:75px;}
+.al_list img {border: 1px solid #eee;background: #fff;-webkit-box-shadow: 0 1px 4px rgba(0,0,0,.085);-moz-box-shadow: 0 1px 4px rgba(0,0,0,.085);box-shadow: 0 1px 4px rgba(0,0,0,.085);}
+.zixun p {width: 120px;margin-left: 0;}
