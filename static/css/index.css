@@ -264,7 +264,7 @@ footer{
 .t-title{font-size: 22px;margin-bottom: 10px;border-bottom: 1px solid #fff;}
 .t-text{font-size: 12px;}
 .trust{
-  height: 687px;
+  height: 680px;
 }
 .why-box{
   background-color: rgba(233,233,233,0.8);
@@ -287,6 +287,12 @@ footer{
 }
 .trust-logo{
   margin-top: 28px;
+}
+.trust .in-text span, .trust .in-title{
+  color: #fff;
+}
+.trust .in-text:after{
+  border-color: #fff;
 }
 .why-list{
 
@@ -325,7 +331,7 @@ footer{
 .nav{
     height: 70px;
     line-height: 70px;
-    border-bottom: 1px solid #ddd;
+    /* border-bottom: 1px solid #ddd; */
 }
 .nav-content{
     width: 1200px;
@@ -375,20 +381,23 @@ footer{
     background-image: url(../img/banner4.jpg);
 }
 .slide-img{
-    height: 687px;
+    height: 678px;
 }
-.introduce{width: 1007px;margin: 0 auto;}
+.introduce{width: 1007px;margin: 0 auto;padding-top: 40px;padding-bottom: 40px;}
 .in-content{/* margin-top: 64px; */}
-.in-block{
-
-}
+.in-block{color: #333;}
 .in-title{font-size: 26px;}
 .in-text{font-size: 12;}
 .in-text>span{
     line-height: 32px;
+    color: #333;
+    font-size: 16px;
+}
+.in-text>.fs12{
+  font-size: 12px;
 }
 .in-text span ~ span{
-    line-height: 20px;
+    line-height: 22px;
 }
 .in-text span{display: block;}
 .in-text:after{
@@ -502,4 +511,3 @@ footer{
     height: 70px;
     opacity: 1;
     border-bottom: 1px solid transparent;
-}
