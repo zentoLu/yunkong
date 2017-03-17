@@ -1,3 +1,10 @@
+body{
+    background-image: url(../img/bg@2x.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-size: cover;
+    background-attachment: fixed;
+}
 .manager-contact{border-top: 1px solid #484848;padding-top: 40px;}
 .manager{width: 49.999999%;color: #fff;font-size: 18px;margin-bottom: 44px;}
 .manager-city{
@@ -49,9 +56,7 @@ footer{
 .weixin{
   background-image: url(../img/f23@2x.png);
 }
-.cooperation{
-
-}
+.cooperation{padding-top: 64px;padding-bottom: 40px;}
 .c-item{
   display: inline-block;
   position: relative;
@@ -125,7 +130,7 @@ footer{
 .care{width: 31%;height: 306px;background-position: -389px bottom;}
 .travel{width: 34.36%;height: 306px;background-position: right bottom;}
 
-.partner{background-color: #f4f4f5;padding-top: 1px;}
+.partner{background-color: #f4f4f5;padding-top: 64px;padding-bottom: 64px;}
 .bar-l:hover:after {
     content: '';
     background-image: url(../img/arr-lon.png);
@@ -261,9 +266,15 @@ footer{
 .trust{
   height: 687px;
 }
+.why-box{
+  background-color: rgba(233,233,233,0.8);
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
 .why{
   width: 1007px;
   margin: 0 auto;
+
 }
 .img-trust{
   width: 1276px;
@@ -367,7 +378,7 @@ footer{
     height: 687px;
 }
 .introduce{width: 1007px;margin: 0 auto;}
-.in-content{margin-top: 64px;}
+.in-content{/* margin-top: 64px; */}
 .in-block{
 
 }
