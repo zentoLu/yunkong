@@ -324,7 +324,7 @@ footer{
 .nav-logo{
     width: 126px;
     height: 52px;
-    background-image: url(../img/logo.png);
+    background-image: url(../img/logo2.png);
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
@@ -333,12 +333,23 @@ footer{
 .nav-bar{
     margin-right: 150px;
 }
+.nav-item a{
+    color: #333;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+}
 .nav-item{
-    margin-left: 38px;
+  padding: 0 30px;
+  position: relative;
 }
 
-.nav-item.active{
-    color: #0186ec
+.nav-item.active a{
+    color: #0186ec;
+
+}
+.nav-list .nav-item:hover a{
+    color: #333;
 }
 .banner{
     height: 687px;
@@ -446,3 +457,38 @@ footer{
 }
 .item-body-img6:after{
   background-position: right bottom
+  }
+.barul {
+    position: absolute;
+    top: 0;
+    left: -5%;
+    width: 110%;
+    height: 0;
+    font-size: 14px;
+    transition-duration: 300ms;
+    -moz-transition-duration: 300ms;
+    -webkit-transition-duration: 300ms;
+    overflow: hidden;
+}
+.nav-item:hover .barul-0,.barul-0:hover {
+    height: 70px;
+}
+ .barul > .barulshadow {
+    position: relative;
+    top: 0;
+    margin: 0 auto;
+    width: 90.9%;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.7);
+    -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.7);
+}
+.barul:before {
+    margin: 0 auto;
+    background-color: #2881f6;
+    display: block;
+    content: ' ';
+    width: 90.9%;
+    height: 70px;
+    opacity: 1;
+    border-bottom: 1px solid transparent;
+}
