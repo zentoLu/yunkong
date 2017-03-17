@@ -102,6 +102,19 @@ footer{
   margin: 0 auto;
   margin-top: 16px;
 }
+.stock .c-logo{
+  background-position: -189px 0;
+}
+.taobao .c-logo{
+  background-position: -255px 0;
+}
+.care .c-logo{
+  background-position: -56px 0;
+}
+.travel .c-logo{
+  background-position: -113px 0;
+}
+
 .c-logo{
   width: 46px;
   height: 44px;
@@ -184,7 +197,7 @@ footer{
 .item-text {
     line-height: 20px;
     font-size: 12px;
-    height: 120px;
+    height: 134px;
     font-family: "Microsoft YaHei", simsun, sans-serif;
     padding: 0 20px;
     border-top: 0;
@@ -216,19 +229,21 @@ footer{
     position: absolute;
     top: -41px;
     left: 50%;
-    width: 80px;
-    height: 80px;
+    width: 76px;
+    height: 76px;
     border-radius: 41px;
     overflow: hidden;
     margin-left: -41px;
     background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-position: 0px 0;
 }
 .turn-list {
     position: relative;
     top: 18px;
     margin: auto;
     width: 960px;
-    height: 300px;
+    height: 312px;
     overflow: hidden;
 }
 .turn-list .list-body {
@@ -251,8 +266,8 @@ footer{
 }
 .item{
       float: left;
-    width: 320px;
-    height: 300px;
+      width: 320px;
+      height: 310px;
 }
 .trust-list{width: 1007px;margin: 0 auto;margin-top: 98px;}
 .trust-item{
@@ -281,7 +296,7 @@ footer{
   height:379px;
   margin: 0 auto;
 }
-.why-desc{margin-top: 12px;}
+.why-desc{margin-top: 26px;}
 .trust .in-block{
   padding-top: 70px;
 }
@@ -312,7 +327,7 @@ footer{
   width: 121px;
   height: 121px;
   display: inline-block;
-  margin-bottom: 26px;
+  margin-bottom: 14px;
   background-image: url(../img/why.png);
   background-repeat: no-repeat;
 }
@@ -326,7 +341,7 @@ footer{
   background-position: right 0;
 }
 .why-label{font-size: 22px;margin-bottom: 10px;}
-.why-text{color: #333;}
+.why-text{color: #333;text-align:left;}
 
 .nav{
     height: 70px;
@@ -409,20 +424,26 @@ footer{
     border-bottom: 3px solid #448cf8;
 }
 .block1-list{margin-top: 22px;}
-.block1-item-body{float: left;width: 335px;height: 175px;border-width: 14px 14px;border-color: transparent;border-style: solid;box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;}
+.block1-item-body{float: left;width: 335px;height: 188px;border-width: 14px 14px;border-color: transparent;border-style: solid;box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;}
 .block1-item-content{position: relative;height: 100%;width: 100%;overflow: hidden;border: 1px solid #272536;box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;}
 .item-body-content{
     position: absolute;
     top: 13px;
     width: 100%;
 }
+.block1-item-content:hover .item-body-hover {
+    transform: translateY(0);
+    -moz-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    top: 0px/9;
+}
 .item-body-hover{
-        position: absolute;
+    position: absolute;
     top: 0;
-    top: -147px/9;
-    transform: translateY(-147px);
-    -moz-transform: translateY(-147px);
-    -webkit-transform: translateY(-147px);
+    top: -158px/9;
+    transform: translateY(-158px);
+    -moz-transform: translateY(-158px);
+    -webkit-transform: translateY(-158px);
     height: 100%;
     width: 100%;
     transition-duration: 300ms;
@@ -431,6 +452,33 @@ footer{
     transition-timing-function: ease;
     -moz-transition-timing-function: ease;
     -webkit-transition-timing-function: ease;
+}
+.item-body-hover .item-hover-content {
+    position: absolute;
+    top: 35px;
+    height: 100%;
+    width: 100%;
+    color: #ffffff;
+}
+.item-hover-content .item-body-text {
+    width: 80px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 18px;
+    margin: 16px auto;
+    cursor: pointer;
+}
+.item-body-hover .item-hover-bg {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #448cf8;
+    opacity: 0.95;
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=95);
+} 
+.item-body-text a{
+  color: inherit;
 }
 .block1-body .item-body-img {
     margin: auto;
@@ -511,3 +559,10 @@ footer{
     height: 70px;
     opacity: 1;
     border-bottom: 1px solid transparent;
+  }
+.block1-item-content:hover .item-body-hover {
+    transform: translateY(0);
+    -moz-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    top: 0px/9;
+}
