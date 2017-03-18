@@ -5,6 +5,28 @@ body{
     background-size: cover;
     background-attachment: fixed;
 }
+
+#panel{position:fixed;right:0;top:50%;margin-top:-126px;height:250px;border:1px solid #ff9d3a;background:#ff9d3a;width:49px;z-index:999;font-family:'microsoft yahei';}
+.index_cy{width:30px;height:30px;background-image:url(../img/index_cy.png);position:fixed; right:0; top:50%; margin-top:140px;background-position:62px 0px;cursor:pointer;}
+.index_cy2{width:30px;height:30px;background-image:url(../img/index_cy.png);position:fixed; right:0; top:50%; margin-top:140px;background-position:30px 0px;cursor:pointer;}
+#panel,#panel .info{border-top-left-radius:10px;border-bottom-left-radius:10px;}
+
+#panel .icons li{width:49px;height:49px;background-image:url(../img/icon2.png);background-repeat:no-repeat;}
+.icons .up{background-position:-330px -125px;cursor:pointer;}
+.icons .qq{background-position:-385px -73px;}
+.icons .tel{background-position:-385px -159px;}
+.icons .wx{background-position:-383px -121px;}
+.icons .down{background-position:-330px -164px;cursor:pointer;}
+
+#panel .info{position:absolute;height:147px;top:50%;right:100%;margin-top:-73.5px;background:#ff9d3a;width:0;overflow:hidden;transition:all .5s;}
+#panel .info.hover{width:145px;}
+#panel .info li{width:145px;display:none;text-align:center;color:#ffffff;}
+
+#panel .info li p{font-size:1.1em;line-height:2em;padding:15px;text-align:left;}
+#panel .info li.qq p a{display: block;margin-top: 12px;width: 100px;height: 32px;line-height: 32px;color: white;font-size: 16px;text-align: center;text-decoration: none;border: 1px solid white;border-radius:5px;}
+#panel .info li.qq p a:hover{background:#fe7701;border-color:#fe7701;color:#fff;}
+#panel .info li  div.img{height:100%;background:#ff9d3a;margin:15px}
+
 .flex-control-nav {
     bottom: 16px;
 }
@@ -44,7 +66,7 @@ footer{
 .weibo:hover{
   background-image: url(../img/f11@2x.png);
 }
-.qq:hover{
+.tencent:hover{
   background-image: url(../img/f12@2x.png);
 }
 .weixin:hover{
@@ -53,7 +75,7 @@ footer{
 .weibo{
   background-image: url(../img/f21@2x.png);
 }
-.qq{
+.tencent{
   background-image: url(../img/f22@2x.png);
 }
 .weixin{
