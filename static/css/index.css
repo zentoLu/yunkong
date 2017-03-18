@@ -86,8 +86,10 @@ footer{
   display: inline-block;
   position: relative;
   top: 86px;
+  cursor: pointer;
 }
 .c-above{
+  cursor: pointer;
   position: absolute;
   top:0;
   bottom: 0;

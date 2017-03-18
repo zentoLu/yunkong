@@ -10,11 +10,19 @@ $(function() {
     $("#panel").mouseleave(function() {
         $("#panel .info").removeClass('hover');
     })
-    $(".icons .up").click(function() {
-        $.fn.ronbongpage.moveSectionUp();
-    });
-    $(".icons .down").click(function() {
-        $.fn.ronbongpage.moveSectionDown();
-    });
+
+
+    initToolBox();
+    // 右侧工具箱
+    function initToolBox() {
+        // 快速到顶部
+        var $go_top = $(".icons .up");
+        $go_top.click(function() { $('html,body,#wrap').animate({ scrollTop: 0 }, 600); });
+
+        // 获取scrollTop
+        function getScrollTop() {
+            return Math.max(document.documentElement.scrollTop, document.body.scrollTop);
+        }
+    }
 
 });
