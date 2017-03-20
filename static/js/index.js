@@ -2,14 +2,16 @@ $(function() {
     $('.flexslider').flexslider({
         animation: "slide"
     });
-    $("#panel .icons li").not(".up,.down").mouseenter(function() {
-        $("#panel .info").addClass('hover');
-        $("#panel .info li").hide();
-        $("#panel .info li." + $(this).attr('class')).show();
-    });
-    $("#panel").mouseleave(function() {
-        $("#panel .info").removeClass('hover');
-    })
+    // $("#panel .icons li").not(".up,.down").mouseenter(function() {
+    //     $("#panel .info").addClass('hover');
+    //     $("#panel .info li").hide();
+    //     $("#panel .info li." + $(this).attr('class')).show();
+    // });
+    // $("#panel").mouseleave(function() {
+    //     $("#panel .info").removeClass('hover');
+    // })
+    //
+
 
 
     initToolBox();
