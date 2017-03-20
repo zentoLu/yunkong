@@ -66,4 +66,21 @@ $(function() {
         }
     }
 
+    move('price', 'SPrice');
+    move('cooperation', 'SCo');
+    move('index', 'SIndex');
+    move('sysFuncs', 'SFuncs');
+
+    function move(dist, src) {
+        var s1 = '#' + dist, s2 = '#' + src;
+        $(s2).on('click', function() {
+            var top = $(s1).offset().top;
+            $('html,body').animate({ scrollTop: top }, 600);
+        });
+    }
+
+    $('#company,.qq-btn').on('click', function() {
+        window.open("http://wpa.qq.com/msgrd?v=3&uin=3502606449&site=qq&menu=yes");
+    });
+
 });
