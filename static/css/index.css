@@ -5,6 +5,10 @@ body{
     background-size: cover;
     background-attachment: fixed;
 }
+
+.nav-item:hover a, .nav-item a:active{
+  color: #2c5ef5;
+}
 /*.qq a{
   display: block;
   width: 100%;
@@ -373,8 +377,8 @@ footer{
 .why-img3{
   background-position: right 0;
 }
-.why-label{font-size: 22px;margin-bottom: 10px;}
-.why-text{color: #333;text-align:left;}
+.why-label{font-size: 22px;margin-bottom: 10px;font-weight: bold;}
+.why-text{color: #333;text-align:left;font-size: 16px;}
 
 .nav{
     height: 70px;
@@ -414,9 +418,7 @@ footer{
     color: #0186ec;
 
 }
-.nav-list .nav-item:hover a{
-    color: #333;
-}
+
 .banner{
     height: 687px;
 }
@@ -530,7 +532,7 @@ footer{
     margin-top: 5px;
     font-size: 18px;
     color: #010101;
-    line-height: 18px;
+    line-height: 27px;
 }
 .item-body-line {
     margin-top: 2px;
@@ -600,3 +602,18 @@ footer{
     -webkit-transform: translateY(0);
     top: 0px/9;
 }
+
+/*main css*/
+.izl-rmenu{position:fixed; right:0;  bottom:10px;top:40%;  z-index:999; }
+.izl-rmenu .btn_1{width:72px; height:73px; margin-bottom:1px; cursor:pointer; position:relative;}
+.izl-rmenu .btn-qq{background:url(../img/r_qq.png) 0px 0px no-repeat; background-color:#6da9de;}
+.izl-rmenu .btn-qq:hover{background-color:#488bc7;}
+.izl-rmenu a.btn-qq,.izl-rmenu a.btn-qq:visited{background:url(../img/r_qq.png) 0px 0px no-repeat; background-color:#6da9de; text-decoration:none; display:block;}
+.izl-rmenu .btn-wx{background:url(../img/r_wx.png) 0px 0px no-repeat; background-color:#78c340;}
+.izl-rmenu .btn-wx:hover{background-color:#58a81c;}
+.izl-rmenu .btn-wx .pic{position:absolute;left: -138px;top: 00px;display:none;width:138px;min-width: 138px;height: 135px;/* display:inline!important; */}
+.izl-rmenu .btn-phone{background:url(../img/r_phone.png) 0px 0px no-repeat; background-color:#fbb01f;}
+.izl-rmenu .btn-phone:hover{background-color:#ff811b;}
+.izl-rmenu .btn-phone .phone{background-color:#ff811b; position:absolute; width:160px; left:-160px; top:0px; line-height:73px; color:#FFF; font-size:18px; text-align:center; display:none;}
+.izl-rmenu .btn-top{background:url(../img/r_top.png) 0px 0px no-repeat; background-color:#666666; display:none;}
+.izl-rmenu .btn-top:hover{background-color:#444;}
