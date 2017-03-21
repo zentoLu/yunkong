@@ -99,7 +99,7 @@ $(function() {
 
     var h = document.documentElement.clientHeight,
     w = document.documentElement.clientWidth,
-    gap = 100;
+    gap = 100, isHover = false;
     qqMove();
     var hStep = gap, wStep = gap;
     function qqMove() {
@@ -121,11 +121,20 @@ $(function() {
         if(left < gap) {
             wStep = gap;
         }
-
-        $('.daokeQ').delay(2000).animate({ top: top + hStep, left: left + wStep}, 2500,  function() {
-            qqMove();
-        });
+        if(!isHover) {
+            $('.daokeQ').delay(2000).animate({ top: top + hStep, left: left + wStep}, 2500,  function() {
+                qqMove();
+            });
+        }
+        
     }
+
+    $('.daokeQ').mouseover(function() {
+        isHover = true;
+    }).mouseleave(function(){
+        isHover = false;
+        qqMove();
+    });
 
     var p=0,t=0;  
     //p是新值，t是旧值
@@ -142,6 +151,8 @@ $(function() {
                 }
             }  
             setTimeout(function(){t = p;},0);         
-    });  
+    }); 
+
+
 
 });
