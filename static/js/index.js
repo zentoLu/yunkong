@@ -14,7 +14,7 @@ $(function() {
     // })
     //
 
-    var tophtml="<div id=\"izl_rmenu\" class=\"izl-rmenu\"><a href=\"tencent://Message/?Uin=450500564&websiteName=sc.chinaz.com=&Menu=yes\" class=\"btn_1 btn-qq\"></a><div class=\"btn_1 btn-wx\"><img class=\"pic\" src=\"static/img/qrcode.png\" onclick=\"window.location.href=\'http://%77%77%77%2e%73%75%63%61%69%6a%69%61%79%75%61%6e%2e%63%6f%6d\'\"/></div><div class=\"btn_1 btn-phone\"><div class=\"phone\">400-6856-838</div></div><div class=\"btn_1 btn-top\"></div></div>";
+    var tophtml="<div id=\"izl_rmenu\" class=\"izl-rmenu\"><a href=\"tencent://Message/?Uin=3502606449&websiteName=sc.chinaz.com=&Menu=yes\" class=\"btn_1 btn-qq\"></a><div class=\"btn_1 btn-wx\"><img class=\"pic\" src=\"static/img/qrcode.png\" onclick=\"window.location.href=\'http://%77%77%77%2e%73%75%63%61%69%6a%69%61%79%75%61%6e%2e%63%6f%6d\'\"/></div><div class=\"btn_1 btn-phone\"><div class=\"phone\">400-6856-838</div></div><div class=\"btn_1 btn-top\"></div></div>";
     $("#top").html(tophtml);
     $("#izl_rmenu").each(function(){
         $(this).find(".btn-wx").mouseenter(function(){
@@ -82,5 +82,66 @@ $(function() {
     $('#company,.qq-btn').on('click', function() {
         window.open("http://wpa.qq.com/msgrd?v=3&uin=3502606449&site=qq&menu=yes");
     });
+
+    
+    var t = 0;
+    interval();
+    function interval() {
+        setTimeout(function() {
+            t += 10;
+            $('.daokeQ').removeClass('hide');
+        }, t*1000);
+    }
+    $('.qq-close').on('click', function() {
+        $('.daokeQ').addClass('hide');
+        interval();
+    });
+
+    var h = document.documentElement.clientHeight,
+    w = document.documentElement.clientWidth,
+    gap = 100;
+    qqMove();
+    var hStep = gap, wStep = gap;
+    function qqMove() {
+        var top = parseInt( $(".daokeQ").css('top') ), 
+        left = parseInt( $(".daokeQ").css('left') );
+        
+        if(top > h-gap-236) {
+            hStep = -gap;
+        }
+
+        if(left > w-gap-406) {
+            wStep = -gap;
+        }
+
+        if(top < gap) {
+            hStep = gap;
+        }
+
+        if(left < gap) {
+            wStep = gap;
+        }
+
+        $('.daokeQ').delay(2000).animate({ top: top + hStep, left: left + wStep}, 2500,  function() {
+            qqMove();
+        });
+    }
+
+    var p=0,t=0;  
+    //p是新值，t是旧值
+    $(window).scroll(function(e){  
+            p = $(this).scrollTop();  
+              
+            if(t<=p){//下滚  
+                $('#index').removeClass('nav-fixed');
+            }else{//上滚  
+                if(p > 70) {
+                    $('#index').addClass('nav-fixed');
+                }else{
+                    $('#index').removeClass('nav-fixed');
+                }
+            }  
+            setTimeout(function(){t = p;},0);         
+    });  
 
 });
