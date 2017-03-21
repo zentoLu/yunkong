@@ -84,7 +84,7 @@ $(function() {
     });
 
     
-    var t = 0;
+    var t = 10;
     interval();
     function interval() {
         setTimeout(function() {
