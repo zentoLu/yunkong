@@ -14,7 +14,7 @@ $(function() {
     // })
     //
 
-    var tophtml="<div id=\"izl_rmenu\" class=\"izl-rmenu\"><a href=\"tencent://Message/?Uin=3502606449&websiteName=sc.chinaz.com=&Menu=yes\" class=\"btn_1 btn-qq\"></a><div class=\"btn_1 btn-wx\"><img class=\"pic\" src=\"static/img/qrcode.png\" onclick=\"window.location.href=\'http://%77%77%77%2e%73%75%63%61%69%6a%69%61%79%75%61%6e%2e%63%6f%6d\'\"/></div><div class=\"btn_1 btn-phone\"><div class=\"phone\">400-6856-838</div></div><div class=\"btn_1 btn-top\"></div></div>";
+    var tophtml="<div id=\"izl_rmenu\" class=\"izl-rmenu\"><a href=\"tencent://Message/?Uin=3502606449&websiteName=sc.chinaz.com=&Menu=yes\" class=\"btn_1 btn-qq\"></a><div class=\"btn_1 btn-wx\"><img class=\"pic\" src=\"static/img/qrcode.png\" onclick=\"window.location.href=\'http://%77%77%77%2e%73%75%63%61%69%6a%69%61%79%75%61%6e%2e%63%6f%6d\'\"/></div><div class=\"btn_1 btn-phone\"><div class=\"phone\">185-8841-6742</div></div><div class=\"btn_1 btn-top\"></div></div>";
     $("#top").html(tophtml);
     $("#izl_rmenu").each(function(){
         $(this).find(".btn-wx").mouseenter(function(){
@@ -136,12 +136,12 @@ $(function() {
         qqMove();
     });
 
-    var p=0,t=0;  
-    //p是新值，t是旧值
+    var p=0,old=0;  
+    //p是新值，old是旧值
     $(window).scroll(function(e){  
             p = $(this).scrollTop();  
               
-            if(t<=p){//下滚  
+            if(old<=p){//下滚  
                 $('#index').removeClass('nav-fixed');
             }else{//上滚  
                 if(p > 70) {
@@ -150,7 +150,7 @@ $(function() {
                     $('#index').removeClass('nav-fixed');
                 }
             }  
-            setTimeout(function(){t = p;},0);         
+            setTimeout(function(){old = p;},0);         
     }); 
 
 
