@@ -6,6 +6,49 @@ body{
     background-attachment: fixed;
 }
 
+.banner-container{
+  width: 1200px;
+  height: 687px;
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  margin-left: -600px;
+}
+.bill-img{
+  margin-top: 140px;
+  background: #fff url(../img/bill.png) no-repeat center;
+  height: 108px;
+  width: 418px;
+  margin-bottom: 18px;
+}
+.banner2-text{
+
+font-size: 24px;
+}
+.banner2-btn{
+  
+color: #fff;
+  
+width: 385px;
+  
+height: 108px;
+  
+background-color: #3F98E6;
+  
+text-align: center;
+  
+line-height: 108px;
+  
+font-size: 40px;
+  
+margin-top: 70px;
+  
+cursor:pointer;
+}
+.banner2-btn:hover{
+  background-color: #4949F3;
+}
+
 .nav-item:hover a, .nav-item a:active{
   color: #4fa7f5;
 }
@@ -430,6 +473,7 @@ footer{
 }
 .banner2{
     background-image: url(../img/banner2.jpg);
+    /* height: 865px!important; */
 }
 .banner3{
     background-image: url(../img/banner3.jpg);
