@@ -321,7 +321,8 @@ footer{
     margin-left: -41px;
     background-color: #ffffff;
     background-repeat: no-repeat;
-    background-position: 0px 0;
+    background-position: center;
+    background-size: 76px;
 }
 .turn-list {
     position: relative;
