@@ -501,7 +501,7 @@ footer{
 .in-text span ~ span{
     line-height: 22px;
 }
-.in-text span{display: block;}
+.in-text span{display: block;width:61.8%;margin:0 auto;}
 .in-text:after{
     margin: auto;
     margin-top: 12px;
