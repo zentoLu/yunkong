@@ -1,3 +1,28 @@
+@media only screen and (max-width: 768px) { 
+  .nav-fixed{
+    display:none;
+  }
+  body{
+    min-width:0;
+  }
+  #price, .why-box, .trust, #cooperation,.partner,#sysFuncs,#banner,#izl_rmenu,#rwx999kefu2,.nav-bar{
+    display:none!important;
+  }
+  #LXB_CONTAINER{
+    height:0!important;
+    overflow:hidden!important;
+  }
+  .introduce,.nav-content {
+    width: 100%!important;
+  }
+  .in-text span ~ span{
+    margin-bottom: 20px;
+  }
+  body .block1-item-body{
+    margin:0 auto;
+    float:none;
+  }
+ }
 body{
     background-image: url(../img/bg@2x.jpg);
     background-repeat: no-repeat;
