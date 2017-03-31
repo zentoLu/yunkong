@@ -39,6 +39,7 @@ body{
   z-index: 2;
   left: 50%;
   margin-left: -600px;
+  cursor:pointer;
 }
 .bill-img{
   margin-top: 140px;
@@ -510,6 +511,7 @@ footer{
 }
 .slide-img{
     height: 678px;
+    cursor:pointer;
 }
 .introduce{width: 1007px;margin: 0 auto;padding-top: 40px;padding-bottom: 40px;}
 .in-content{/* margin-top: 64px; */}

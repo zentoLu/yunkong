@@ -83,8 +83,8 @@ $(function() {
         window.open("http://wpa.qq.com/msgrd?v=3&uin=3502606449&site=qq&menu=yes");
     });
 
-    $(body).on('click','.btn-phone', function() {
-        
+    $('body').on('click','.btn-phone', function() {
+        window.open("http://dwz.cn/5F6SCb");
     });
 
     
