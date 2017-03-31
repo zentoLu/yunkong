@@ -11,6 +11,7 @@
   #LXB_CONTAINER{
     height:0!important;
     overflow:hidden!important;
+    top:10px!important;
   }
   .introduce,.nav-content {
     width: 100%!important;
